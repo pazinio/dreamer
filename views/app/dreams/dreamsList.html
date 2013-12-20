@@ -1,0 +1,31 @@
+<dreams:>
+  <div class="dreams">
+    <h3>Dreams</h3>
+    <app:addDream>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Dream</th>
+          <th>User</th>
+        </tr>
+      </thead>
+      <tbody>
+        {#each _page.dreams as :dream}
+          <tr>
+            <td>{{:dream.description}}</td>
+						<td>Anonymous</td>
+            <td><button class="btn btn-danger btn-small" x-bind="click: dreams.remove">Remove</button></td>
+          </tr>
+        {/}
+      </tbody>
+    </table>
+  </div>
+
+<addDream:>
+  <form class="form-inline" x-bind="submit: dreams.add">
+    <div class="my-inline-input">
+      <textarea class="col-md-8" rows="3">{_page.newDream.description}</textarea>
+      <span class="col-md-1"></span>
+      <button type="submit" class="btn btn-info col-md-2">Add</button>
+    </div>
+  </form>

@@ -1,0 +1,12 @@
+{
+
+  "MONGO_URL_LOCAL": "mongodb://localhost:27017/dreamer",
+  "LOCAL_DOMAIN": "http://localhost:3001",
+  "REMOTE_DOMAIN": "http://herokuapp.com/",
+  "LOCAL_PORT": 3001,
+  "REDIS_PORT": 16769,
+  "REDIS_DB": 8,
+  "SITE_NAME": "Dreamer",
+  "SITE_EMAIL": "dreamer@gmail.com"
+
+}
